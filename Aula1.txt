@@ -1,0 +1,29 @@
+Ver versões do .NET SDK
+
+dotnet --list-sdks
+
+SDK: "Software Development Kit"
+CLR: "Common Language Runtime"
+MYSIWYG: "What you see is what you get"
+    --Ferramentas de Drag 'n Drop--
+
+SGBD: "Sistema de gerenciamento de banco de dados"
+W3C: World Wide Web Consourtium
+IDE: Integrated Development Environment
+XML: Extensible Markup Language
+HTML: Hypertext Markup Language
+
+Instalar as seguintes extensões:
+    - C#;
+    - C# extensions;
+    - Dracula;
+    - IntelliCode;
+    - Material Icon Theme;
+
+O último índice do vetor vai ser sempre o tamanho total -1
+
+Tipos de variáveis de laço de repetição:
+ - Contador;
+ - Acumulador;
+ - Flag; 
+
