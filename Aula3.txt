@@ -1,0 +1,14 @@
+O que é Git ?
+
+Sistema de gerenciamento de versão de arquivos criado por Linus Torvalds
+ -> Em cima do sistema de gerenciamento de versão, foi construido o GitHub "Rede social de DEV"
+
+ Ebook -> GitHub for dummies
+
+ Repositórios
+    -> Repositório Local: se encontra na maquina
+
+    -> Repositório Remoto: Fica configurado para armazenar na núvem (servidores microsoft)
+
+Push: comando para enviar os arquivos do repositório local para o remoto
+Gitignore: arquivo que vai me permitir definir quais recursos serão ignorados na hora do push
