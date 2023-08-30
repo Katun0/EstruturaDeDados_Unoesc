@@ -1,0 +1,109 @@
+Arrays: 
+-	A estrutura de array pode ser usada para guardar uma ou mais variáveis do mesmo tipo primitivo, essas como INT ( arrayInt = [1, 2, 3]) ou então STRING (arrayString = [‘a’, ‘b’, ‘c’]) em uma classe definida pelo usuário...
+
+-	No C#, tem-se o benefício de uma quantidade vasta de variantes de array as apresentadas no livro são exemplos de unidimensionais(a), multidimensionais (b) e irregulares (c) todas foram apresentadas no diagrama do texto pág. 34...
+
+-	Um fato importante sobre Arrays é: após uma array ser declarada, ela não pode ser alterada, pelo menos não facilmente como uma lista genérica... Para uma aplicação em que precise ser alterado, array não é uma opção tão boa quanto lista.
+
+Arrays Unidimensionais:
+-	Por ser uma array, pode acumular vários itens de um mesmo tipo, mas, as unidimensionais trabalham com Index, ou seja, o vetor ou “casa” onde se encontram, importante lembrar que esses índices são conhecidos como “Zero-based”, entretanto o primeiro vetor sempre vai ser ‘0’ (Exemplo = [0, 1, 2, 3, 4, 5] -> Array com 6 itens) e o útimo sempre será o tamanho da array –1...
+
+-	Para usar uma array unidimensional, você precisa declará-la, a declaração é bem simples, primeiro se identifica o tipo do elemento e o nome: 
+
+Tipo[] nome; 
+Int[] numbers;
+
+-	A declaração é necessária para que se possa inicializar uma array, a inicialização também é bem simples:
+
+numbers = new int [5];
+
+-	É possível também declarar e inicializar a array na mesma linha:
+
+Int[] numbers = new int[5];
+
+-	Assim que declarar uma array, ela terá um valor padrão, esse é o número 0 no caso de uma array com int, caso precise alterar um valor, terá de usar os colchetes [] para indicar a index do elemento:
+-	 
+numbers [0] = 9;
+numbers [1] = -11;
+numbers [4] = 1;
+Resultado: numbers -> [9, -11, 0, 0, 1, 0]
+
+-	Você também consegue declarar e iniciar uma array, já definindo os elementos também, na mesma linha:
+Int [] numbers = new int [] {9, -11, 6, -12, 1};
+int [] numbers = {9, -11, 6, -12, 1};
+
+-	Quando se tem uma array com valores já definidos, você pode consultar esses valores usando a seguinte linha de código:
+
+Int middle = numbers[2];
+
+-	Nesse caso, eu estou consultando o valor que está na terceira posição, index 2 ele deve me retornar o número ‘6’.
+
+-	Exemplo “Month Names” feito no vscode e estará junto com esse resumo no repositório
+
+Arrays Multidimensionais:
+-	As arrays no C# não se limitam a apenas uma dimensão, também é possível criar arrays com duas ou três dimensões, para criar uma dimensão a mais na array, é necessário adicionar um elemento a mais na inicialização da array:
+
+Int [, ] numbers = new int [5, 2];		-> 2 dimensões
+
+Int [, , ] numbers = new int [5, 4, 3];		-> 3 dimensões
+
+Claro, você pode também combinar a declaração com a inicialização da array:
+
+Int [,] numbers = new int [,] =
+{
+{ 9, 5, -9},
+{ -11, 4, 0},
+{ 6, 115, 3},
+{ -12, -9, 71},
+{ 1, -6, -1}
+}
+
+-	Para consultar os elementos de uma array multidimensional, é preciso consultar com colchetes a dimensão e o índice do elemento:
+
+Int number = numbers [2] [1];		-> Resposta: 115
+
+-	Para imputar um valor, seguimos a mesma lógica:
+
+Numbers [1] [0] = 11;
+
+-	Exemplos “Multiplication Table” e “Game map” feitos no vsode e estarão disponíveis no repositório GitHub da disciplina...
+
+Arrays Irregulares:
+-	A última variante de Array descrita no livro, é a array irregular, ela é chamada popularmente de “Array de arrays”, soa complicado, mas é bem simples, ela é como uma array unidimensional, pode ser entendida com a mesma lógica, essa é uma array onde cada elemento também é uma array, porém, as arrays “Contidas” não podem ter um tamanho próprio, somente a cadeia de arrays...
+
+-	A declaração e início de uma array irregular é diferente das descritas acima:
+
+Int [] [] numbers = new int [4] [];
+Numbers [0] = new int[] {9, 5, -9};
+Numbers [1] = new int[] {0, -3, 12, 51, -3};
+Numbers [3] = new int[] {54};
+
+-	Se for notar, a escrita é parecida com a unidimensional com 4 elementos, porém, os elementos são “Convertidos” em dimensões, e cada uma com suas próprias arrays, menos a terceira, que não tem valor nenhum atribuído, ou seja, será 0 ou Nulo...
+
+-	Também podemos escrever dessa maneira: 
+
+  Int [] [] numbers = 
+{
+New int[] {9, 5, -9},
+New int[] {0, -3, 12, 51, -3}.
+NULL,
+New int[] {54}
+};
+
+-	Método de consulta/alteração continua basicamente igual:
+
+Int number = numbers [1] [2];	 	-> Reposta: 12
+Number [1] [3] = 50;			-> 51 irá mudar para o número 50
+
+-	Exemplo “Yearly transport plan” feito no vscode e estará disponível no repositório GitHub da matéria
+
+
+
+
+Ordenação de Algoritmos:
+-	 Vários algoritmos trabalham com arrays e manipulam elas, uma das tarefas mais utilizadas quando se fala em array é a ordenação, manipulação dos elementos da array...
+
+-	Temos alguns exemplos de ordenação no livro, como a ordenação por seleção, por inserção, por “bolhas” e a rápida...
+
+Ordenação por Seleção:
+Na ordenação por seleção, o algoritmo seleciona um “tamanho” na array e identifica o menor valor, ele ordena do menor para o maior, 
