@@ -12,3 +12,7 @@ Sistema de gerenciamento de versão de arquivos criado por Linus Torvalds
 
 Push: comando para enviar os arquivos do repositório local para o remoto
 Gitignore: arquivo que vai me permitir definir quais recursos serão ignorados na hora do push
+
+Vetores Multidimensionais:
+    -> Matriz: Conjunto de um ou mais vetores
+    -> Vetores: lista de elementros do mesmo tipo (Array)
