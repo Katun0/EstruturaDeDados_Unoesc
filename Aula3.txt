@@ -16,3 +16,5 @@ Gitignore: arquivo que vai me permitir definir quais recursos serão ignorados n
 Vetores Multidimensionais:
     -> Matriz: Conjunto de um ou mais vetores
     -> Vetores: lista de elementros do mesmo tipo (Array)
+
+Desafio: Crie um programa que solicite ao usuário para carregar valores com zero ou um apenas em uma matriz 3x3 o usuário deve dizer em qual casa da matriz ele vai guardar o valor
