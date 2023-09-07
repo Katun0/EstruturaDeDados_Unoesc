@@ -1,0 +1,13 @@
+Fila = FIFO ("First In First Out") chamado de Queue
+    -> Processo de inclusão/exclusão de um elemento no vetor por meio da prioridade FIFO 
+    -> Um vetor ou lista onde o gerenciamento de entrada dos elementos sempre entram pelo final do vetor, mas sempre o primeiro dado a entrar será o primeiro a sair
+
+Pilha = LIFO ("Last In First Out") ou FILO ("First In Last Out")
+    -> Processo de inclusão/exclusão de um elemento do vetor por meio da prioridade LIFO
+    -> um vetor ou lista onde o gerenciamento de entrada dos elementos sempre entra por cima ou por trás do vetor, mas terá de ser retirado por primeiro
+
+Namespace = Nome da "Caixa de Ferramentas"
+
+Classe = Serve como um "Molde" para o objeto
+	-> Classe é um TAD (Tipo Abstrato de Dados)
+	-> Dica: Nome da classe deve ter o nome do arquivo
