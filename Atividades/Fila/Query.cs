@@ -1,39 +1,39 @@
 using System;
 
-namespace StackClass
+namespace QueueClass
 {
-    public class Stack
+    public class Queue
     {
-        static readonly int MAX = 1000;
+        static readonly int MAX = 4;
         int top = -1;
-        int[] stack = new int[MAX];
+        int[] queue = new int[MAX];
 
         public bool IsEmpty()
         {
             return (top < 0);            
         }
 
-        public bool Push(int data)
+        public bool EnQueue(int data)
         {
             if(top >= MAX)
             {
-                Console.WriteLine("Stack Overflow");
+                Console.WriteLine("Queue Overflow");
                 return false;
             }
             top += 1;
-            stack[top] = data;
+            queue[top] = data;
             return true;
         }
 
-        public int Pop()
+        public int DeQueue()
         {
             if(top < 0)
             {
-                Console.WriteLine("Stack Underflow");
+                Console.WriteLine("Queue Underflow");
                 return 0;
             }
 
-            int valor = stack[top];            
+            int valor = queue[top];            
             top--;
 
             return valor;
@@ -43,25 +43,25 @@ namespace StackClass
         {
             if(top < 0)
             {
-                Console.WriteLine("Stack Underflow");
+                Console.WriteLine("Queue Underflow");
                 return;
             }
 
-            Console.WriteLine($"O topo da pilha é: {stack[top]}" );
+            Console.WriteLine($"O topo da fila é: {queue[top]}" );
         }
 
-        public void PrintStack()
+        public void PrintQueue()
         {
             if(top < 0)
             {
-                Console.WriteLine("Stack Underflow");
+                Console.WriteLine("Queue Underflow");
                 return;
             }
 
-            Console.WriteLine("Itens da pilha:");
-            for(int i = top; i >= 0; i++ )
+            Console.WriteLine("Itens da Fila:");
+            for(int i = top; i >= 0; i-- )
             {
-                string texto = $"Stack[{ stack[i] }]";
+                string texto = $"Queue[{ queue[i] }]";
                 Console.WriteLine(texto);
             }
         }
