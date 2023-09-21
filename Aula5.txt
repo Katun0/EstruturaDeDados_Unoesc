@@ -1,0 +1,17 @@
+Hash Table
+ -> Vetor onde pode se indexar os elementos de maneira livre, mapeando os valores desejados
+ -> Key Value - Valor chave
+
+Interface != tela de usuário
+
+GUI/View = Tela de usuário (Guide User Interface)
+
+Interface == Contrato da Classe
+
+
+Atividade
+Escreva um programa que seja capaz de interagir com o usuário utilizando "Console.WriteLine()" e "Console.ReadLine()" o programa deve
+solicitar ao usuário os pares de Chave Valor para uma Tabela Hash que irá armazenar respectivamente CPF e Nome o programa deve:
+
+1 - Checar se a chave ja foi inserida previamente;
+2 - Realizar as devidas validações para evitar possíveis interrupções de exceção e ao final percorrer e exibir todos os dados inseridos pelo usuario na tela;
