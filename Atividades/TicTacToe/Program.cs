@@ -12,21 +12,14 @@
         {   
             Console.WriteLine("Nome do jogador 1:");
             string name1 = Console.ReadLine();
-            Console.WriteLine($"Jogador {name1} registrado como jogador 1, seu marcador será o 0\n");
+            Console.WriteLine($"Jogador {name1} registrado como jogador 1, seu marcador será o O\n");
             Console.WriteLine("Nome do Jogador 2:");
             string name2 = Console.ReadLine();
-            Console.WriteLine($"Jogador {name2} registrado como jogador 2, seu marcador será o 1\n");
+            Console.WriteLine($"Jogador {name2} registrado como jogador 2, seu marcador será o X\n");
             board();
             do
             {
                 Console.Clear();
-//                Console.WriteLine("Nome do jogador 1:");
-//                string name1 = Console.ReadLine();
-//                Console.WriteLine($"Jogador {name1} registrado como jogador 1, seu marcador será o 0\n");
-//                Console.WriteLine("Nome do Jogador 2:");
-//                string name2 = Console.ReadLine();
-//                Console.WriteLine($"Jogador {name2} registrado como jogador 2, seu marcador será o 1\n");
-
                 if (player % 2 == 0)
                 {
                     Console.WriteLine($"Vez do {name2}");
@@ -37,16 +30,16 @@
                 }
                 board();
                 mark = int.Parse(Console.ReadLine());
-                if(boardNumbers[mark]!='0' && boardNumbers[mark]!='1')
+                if(boardNumbers[mark]!='X' && boardNumbers[mark]!='O')
                 {
                     if(player%2==0)
                     {
-                        boardNumbers[mark] = '1';
+                        boardNumbers[mark] = 'X';
                         player++;
                     }
                     else
                     {
-                        boardNumbers[mark] = '0';
+                        boardNumbers[mark] = 'O';
                         player++;
                     }
                 }
