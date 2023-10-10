@@ -8,6 +8,8 @@ def quicksort(roster, start=0, stop=None):
         quicksort(roster, start, pi-1)
         quicksort(roster, pi+1, stop)
 
+
+
 def partition(roster, start, stop):
     pivot = roster[stop]
     i = start
