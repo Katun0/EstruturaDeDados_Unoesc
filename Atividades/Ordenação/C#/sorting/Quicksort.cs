@@ -1,6 +1,6 @@
 using System;
 using System.Runtime.CompilerServices;
-
+//namespace e imports
 namespace C_.sorting
 {
     public class Quicksort
@@ -23,7 +23,7 @@ namespace C_.sorting
         // Método de Partição
         public int partition(List<int> roster, int start, int stop)
         {
-            // Encontra Pivô e Índice
+            // Encontra Pivô e Início
             int pivot = roster[stop];
             int i = start;
 
